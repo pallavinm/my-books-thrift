@@ -10,8 +10,14 @@ const AddJob = () => {
     const data = new FormData(e.target);
     let bookObj = {
       name: data.get("bookName"),
+      language: data.get("bookLanguage"),
+      description: data.get("Bookdescription"),
       type: data.get("bookType"),
+      cost: data.get("bookCost"),
+      offer: data.get("bookOffer"),
       author: data.get("author"),
+      delivery_date: data.get("bookDeliveryDate"),
+      rating: data.get("bookRating"),
       condition: data.get("bookCondition"),
       page: data.get("pages"),
     };
@@ -53,9 +59,45 @@ const AddJob = () => {
           <Grid item xs={2}>
             <TextField
               size="small"
+              id="bookLanguage"
+              name="bookLanguage"
+              label="Language"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={2}>
+            <TextField
+              size="small"
+              id="Bookdescription"
+              name="Bookdescription"
+              label="description"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={2}>
+            <TextField
+              size="small"
               id="bookType"
               name="bookType"
-              label="Book Type"
+              label="Type"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={2}>
+            <TextField
+              size="small"
+              id="bookCost"
+              name="bookCost"
+              label="Cost"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={2}>
+            <TextField
+              size="small"
+              id="bookOffer"
+              name="bookOffer"
+              label="Offer"
               variant="outlined"
             />
           </Grid>
@@ -80,9 +122,27 @@ const AddJob = () => {
           <Grid item xs={2}>
             <TextField
               size="small"
+              id="bookDeliveryDate"
+              name="bookDeliveryDate"
+              label="Delivery Date"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={2}>
+            <TextField
+              size="small"
+              id="bookRating"
+              name="bookRating"
+              label="Rating"
+              variant="outlined"
+            />
+          </Grid>
+          <Grid item xs={2}>
+            <TextField
+              size="small"
               id="bookCondition"
               name="bookCondition"
-              label="Book Condition"
+              label="Condition"
               variant="outlined"
             />
           </Grid>

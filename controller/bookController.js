@@ -15,7 +15,7 @@ const createBook = async (req, res) => {
 const deleteJob = async (req, res) => {
   res.send("delete Job");
 };
-const getAllJobs = async (req, res) => {
+const getAllBooks = async (req, res) => {
   res.send("get All Jobs");
 };
 const updateJob = async (req, res) => {
@@ -25,4 +25,4 @@ const showStatus = async (req, res) => {
   res.send("show Status");
 };
 
-export { createBook, deleteJob, getAllJobs, updateJob, showStatus };
+export { createBook, deleteJob, getAllBooks, updateJob, showStatus };
