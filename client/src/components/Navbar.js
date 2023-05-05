@@ -12,8 +12,8 @@ const Navbar = () => {
     <Wrapper>
       <div className="nav-center">
         <button className="toggle-btn">
-          <FaAlignLeft />
-          {/* <Logo /> */}
+          {/* <FaAlignLeft /> */}
+          <Logo />
         </button>
 
         <div className="navbar">

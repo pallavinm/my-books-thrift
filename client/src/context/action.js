@@ -7,3 +7,6 @@ export const SETUP_USER_ERROR = " SETUP_USER_ERROR";
 
 export const TOGGLE_SIDEBAR = "TOGGLE_SIDEBAR";
 export const LOGOUT_USER = "LOGOUT_USER";
+
+export const GET_BOOKS_BEGIN = "GET_BOOKS_BEGIN";
+export const GET_BOOKS_SUCCESS = "GET_BOOKS_SUCCESS";

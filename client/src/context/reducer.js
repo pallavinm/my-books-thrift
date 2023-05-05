@@ -6,6 +6,8 @@ import {
   SETUP_USER_ERROR,
   TOGGLE_SIDEBAR,
   LOGOUT_USER,
+  GET_BOOKS_BEGIN,
+  GET_BOOKS_SUCCESS,
 } from "./action";
 
 import { initialState } from "./appContext";
@@ -65,6 +67,15 @@ const reducer = (state, action) => {
       userLocation: "",
     };
   }
+
+  if (action.type === GET_BOOKS_BEGIN) {
+    return { ...state, isloading: true, showAlert: false };
+  }
+  if (action.type === GET_BOOKS_SUCCESS) {
+    // console.log(action.payload.data);
+    return { ...state, isloading: false, books: action.payload.data };
+  }
+
   throw new Error(`no such action : ${action}`);
 };
 

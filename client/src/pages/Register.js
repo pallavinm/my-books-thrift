@@ -3,6 +3,7 @@ import { Logo, FormRow, Alert } from "../components";
 import Wrapper from "../assets/wrappers/RegisterPage";
 import { useAppContext } from "../context/appContext";
 import { useNavigate } from "react-router-dom";
+import Bg from "../assets/images/register.jpeg";
 const initialState = {
   name: "",
   email: "",

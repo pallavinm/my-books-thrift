@@ -89,9 +89,7 @@ const Wrapper = styled.nav`
     .nav-center {
       width: 90%;
     }
-    .logo {
-      display: none;
-    }
+
     .logo-text {
       display: block;
     }

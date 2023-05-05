@@ -7,4 +7,10 @@ export class BookService {
 
     return axios.post(dataURL, data);
   }
+  static GetAllBook() {
+    // debugger;
+    var dataURL = "http://localhost:5000/api/v1/book/";
+
+    return axios.get(dataURL);
+  }
 }

@@ -16,7 +16,8 @@ const deleteJob = async (req, res) => {
   res.send("delete Job");
 };
 const getAllBooks = async (req, res) => {
-  res.send("get All Jobs");
+  const book = await Book.find({});
+  res.send(book).status(200);
 };
 const updateJob = async (req, res) => {
   res.send("update Job");
