@@ -73,14 +73,14 @@ const Register = () => {
             handleChange={handleChange}
           />
         )}
-        {/* {!values.isMember && (
+        {!values.isMember && (
           <FormRow
             type="text"
             name="role"
             value={values.role}
             handleChange={handleChange}
           />
-        )} */}
+        )}
         {/* email input */}
         <FormRow
           type="email"
